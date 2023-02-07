@@ -1,0 +1,8 @@
+GET  http://localhost:247/blogList/ HTTP/1.1
+content-type: application/json
+
+
+###
+
+DELETE  http://localhost:247/blogList/ HTTP/1.1
+content-type: application/json
