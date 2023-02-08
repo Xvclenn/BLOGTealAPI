@@ -1,8 +1,22 @@
-GET  http://localhost:247/blogList/ HTTP/1.1
+GET  http://localhost:2470/blogList/ HTTP/1.1
 content-type: application/json
 
 
 ###
 
-DELETE  http://localhost:247/blogList/ HTTP/1.1
+DELETE  http://localhost:2470/blogList/b34ceeeb-98a1-484b-9553-95f17e8a538e HTTP/1.1
 content-type: application/json
+
+###
+
+POST http://localhost:2470/blogList HTTP/1.1
+content-type: application/json
+
+{
+   "id": "82c2785e-1a08-4167-87b3-0c63e13017c4",
+    "title": "sdz s",
+    "author": "db ",
+    "blogBody": "d bs",
+    "img": "sdb",
+    "date": "2/8/23, 03:04 PM"
+}

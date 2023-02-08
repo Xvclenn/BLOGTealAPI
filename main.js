@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const { v4: uuidv4 } = require("uuid");
 
-const port = 247;
+const port = 2470;
 const app = express();
 
 let blogList = [];
@@ -35,7 +35,8 @@ app.post("/blogList", (req, res) => {
         img,
         date,
     };
-    blogList.push(newBlog);
+    blogList.unshift(newBlog);
+
     res.json(blogList);
 });
 
